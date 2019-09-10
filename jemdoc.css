@@ -365,12 +365,3 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
-
-iframe {
-  height: 600px;
-  width: 1100px;
-  scrolling: on;
-  frameborder: 0;
-  resize: both;
-  overflow: auto;
-}
