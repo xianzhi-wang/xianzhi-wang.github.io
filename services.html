@@ -47,8 +47,8 @@
 </li>
 </ul>
 </span>
-<a href="#Services"><button onclick="myFunction_2()" id="myBtn_2" class="button button4">Read more</button></a>
-<h2 id="PC Member">PC Member</h2>
+<button onclick="myFunction_2()" id="myBtn_2" class="button button4">Read more</button>
+<h2 id="PC_Member">PC Member</h2>
 <ul>
 <li><p>IEEE International Conference on Communications (ICC 2020): Communication and Information Systems Security Symposium</p>
 </li>
@@ -130,7 +130,7 @@
 </li>
 </ul>
 </span>
-<a href="#PC Member"><button onclick="myFunction()" id="myBtn" class="button button4">Read more</button></a>
+<button onclick="myFunction()" id="myBtn" class="button button4">Read more</button>
 <h2 id="Reviewer">Reviewer</h2>
 <ul>
 <li><p>ACM Transactions on Internet Technology, 2019</p>
@@ -257,7 +257,7 @@
 </li>
 </ul>
 </span>
-<a href="#Reviewer"><button onclick="myFunction_1()" id="myBtn_1" class="button button4">Read more</button></a>
+<button onclick="myFunction_1()" id="myBtn_1" class="button button4">Read more</button>
 <script>
 function myFunction() {
   var dots = document.getElementById("dots");
@@ -287,6 +287,7 @@ function myFunction() {
     btnText_2.innerHTML = "Read more"; 
     moreText_2.style.display = "none";
   }
+  location.hash = "#PC_Member";
 }
 function myFunction_1() {
   var dots_1 = document.getElementById("dots_1");
@@ -316,6 +317,7 @@ function myFunction_1() {
     btnText_2.innerHTML = "Read more"; 
     moreText_2.style.display = "none";
   }
+  location.hash = "#Reviewer";
 }
 function myFunction_2() {
   var dots_2 = document.getElementById("dots_2");
@@ -345,6 +347,7 @@ function myFunction_2() {
     btnText_1.innerHTML = "Read more"; 
     moreText_1.style.display = "none";
   }
+  location.hash = "#Services";
 }
 </script>
 </td>
