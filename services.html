@@ -5,6 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="readMoreReadLess.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -28,10 +29,14 @@
 <ul>
 <li><p>Editorial Board Member, International Journal of Web Engineering and Technology, 2019-present</p>
 </li>
-<li><p>Track Co-chair, International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN): Semantic Web Technologies Track, 2019</p>
+<li><p>Track Co-chair, International Conference on Emerging Ubiquitous Systems and Pervasive Networks: Semantic Web Technologies Track, 2019</p>
 </li>
 <li><p>Panelist, Australasian Computer Science Week (ACSW): How to succeed as an early career researcher, 2019</p>
 </li>
+</ul>
+<span id="dots_2"></span>
+<span id="more_2">
+<ul>
 <li><p>Publicity Chair, International Symposium on Internet of Ubiquitous and Pervasive Things (IUPT), 2017</p>
 </li>
 <li><p>Guest Editor, Journal of Big Data (Springer): Special Issue on Service Provisioning in the Big Data Era, 2015</p>
@@ -41,6 +46,8 @@
 <li><p>Track Co-chair, IEEE International Conferences on Mobile Services (MS): Special Track on Services for the Ubiquitous Web, 2015 </p>
 </li>
 </ul>
+</span>
+<button onclick="myFunction_2()" id="myBtn_2" class="button button4">Read more</button>
 <h2>PC Member</h2>
 <ul>
 <li><p>IEEE International Conference on Communications (ICC 2020): Communication and Information Systems Security Symposium</p>
@@ -51,6 +58,10 @@
 </li>
 <li><p>International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN 2019)</p>
 </li>
+</ul>
+<span id="dots"></span>
+<span id="more">
+<ul>
 <li><p>International Conference on Service-Oriented Computing (ICSOC 2019)</p>
 </li>
 <li><p>International Conference on Advanced Data Mining and Applications (ADMA 2019)</p>
@@ -118,6 +129,8 @@
 <li><p>International Symposium on Internet of Ubiquitous and Pervasive Things (IUPT 2015)</p>
 </li>
 </ul>
+</span>
+<button onclick="myFunction()" id="myBtn" class="button button4">Read more</button>
 <h2>Reviewer</h2>
 <ul>
 <li><p>ACM Transactions on Internet Technology, 2019</p>
@@ -128,6 +141,10 @@
 </li>
 <li><p>Neural Computing and Applications, 2019</p>
 </li>
+</ul>
+<span id="dots_1"></span>
+<span id="more_1">
+<ul>
 <li><p>Computing, 2019, 2018, 2017</p>
 </li>
 <li><p>IEEE Access, 2019, 2018</p>
@@ -236,10 +253,58 @@
 </li>
 <li><p>Journal of Xi'an Jiaotong University, 2013</p>
 </li>
-<li><p>Computer Integrated Manufacturing System, 2013
-<br /></p>
+<li><p>Computer Integrated Manufacturing System, 2013</p>
 </li>
 </ul>
+</span>
+<button onclick="myFunction_1()" id="myBtn_1" class="button button4">Read more</button>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunction_1() {
+  var dots = document.getElementById("dots_1");
+  var moreText = document.getElementById("more_1");
+  var btnText = document.getElementById("myBtn_1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunction_2() {
+  var dots = document.getElementById("dots_2");
+  var moreText = document.getElementById("more_2");
+  var btnText = document.getElementById("myBtn_2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </td>
 </tr>
 </table>
