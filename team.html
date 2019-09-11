@@ -26,7 +26,8 @@
 <div class="menu-item"><a href="apply">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2>Research Staff</h2>
+<h2 onclick="myFunction1()">Research Staff</h2>
+<div id="doggleText1" style="display: block;">
 <ul>
 <li><p>Xianzhi Wang (lecturer &amp; DECRA fellow, 2018~)
 </p>
@@ -34,7 +35,9 @@
 <li><p>Zesheng Ye (research assistant, 2019~)</p>
 </li>
 </ul>
-<h2>Research Students</h2>
+</div>
+<h2 onclick="myFunction2()">Research Students</h2>
+<div id="doggleText2" style="display: block;">
 <ul>
 <li><p>Hadeel M S Alhosaini (PhD student, autumn 2020~)</p>
 </li>
@@ -47,7 +50,9 @@
 <li><p>Manqing Dong (PhD student, co-supervise, UNSW, 2016~)</p>
 </li>
 </ul>
-<h2>Thesis/Project Students</h2>
+</div>
+<h2 onclick="myFunction3()">Thesis/Project Students</h2>
+<div id="doggleText3" style="display: block;">
 <ul>
 <li><p>Sakshi Singla (2019): Vedio analysis for anomaly detection</p>
 </li>
@@ -56,7 +61,9 @@
 <li><p>Ty Yarwood, Jack Huggart, Sarah Wang, Colin Luu, William Roson, Sebastian Aroney: intelligent crowdsourcing</p>
 </li>
 </ul>
-<h2>Visitors</h2>
+</div>
+<h2 onclick="myFunction4()">Visitors</h2>
+<div id="doggleText4" style="display: block;">
 <ul>
 <li><p>Guohua Li (NUAA, 2020~)</p>
 </li>
@@ -65,9 +72,10 @@
 <li><p>Haitong Liu (USTC, 2018~)</p>
 </li>
 </ul>
-<h2 onclick="myFunction()"><div id="mainText" class="tooltip">Past Students & Projects<span class="tooltiptext">Click to hide or show</span></div></h2>
+</div>
+<h2 onclick="myFunction5()">Past Students & Projects</h2>
 <p style="margin-top: 25px"></p>
-<div id="doggleText" style="display: none;">
+<div id="doggleText5" style="display: block;">
 <h3>Past Research Students</h3>
 <ul>
 <li><p>Xiaodong Ning (co-supervise, UNSW, graduated 2019)</p>
@@ -102,8 +110,40 @@
 </ul>
 </div>
 <script>
-function myFunction() {
-  var x = document.getElementById("doggleText");
+function myFunction1() {
+  var x = document.getElementById("doggleText1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("doggleText2")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+  var x = document.getElementById("doggleText3")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction4() {
+  var x = document.getElementById("doggleText4")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction5() {
+  var x = document.getElementById("doggleText5")
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {

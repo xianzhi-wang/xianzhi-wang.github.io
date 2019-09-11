@@ -5,7 +5,6 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="tooltip.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -26,7 +25,8 @@
 <div class="menu-item"><a href="apply">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2>Grants</h2>
+<h2 onclick="myFunction1()">Grants</h2>
+<div id="doggleText1" style="display: block;">
 <ol>
 <li><p>Australian Research Council Discovery Early Career Researcher Award, &ldquo;Trust-aware IoT service recommendation,&rdquo; AU$368,446, Sole CI, 2019-2021</p>
 </li>
@@ -35,8 +35,9 @@
 <li><p>FEIT Blue Sky Research Grant, &ldquo;Participatory intelligence for trustworthy and resilient IoT,&rdquo; AU$15,000, First CI, 2019-2020</p>
 </li>
 </ol>
-<h3 onclick="myFunction()"><div id="mainText" class="tooltip">Past Grants<span class="tooltiptext">Click to hide or show</span></div></h3>
-<div id="doggleText" style="display: block;">
+</div>
+<h3 onclick="myFunction2()">Past Grants</h3>
+<div id="doggleText2" style="display: block;">
 <ol>
 <li><p>National Natural Science Foundation of China Project, &ldquo;Mass personalized construction and customization of service networks,&rdquo; CNY 800,000, CI, 2013-2016</p>
 </li>
@@ -47,8 +48,16 @@
 </ol>
 </div>
 <script>
-function myFunction() {
-  var x = document.getElementById("doggleText");
+function myFunction1() {
+  var x = document.getElementById("doggleText1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("doggleText2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
