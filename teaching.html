@@ -5,7 +5,6 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="tooltip.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -26,18 +25,22 @@
 <div class="menu-item"><a href="apply">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2>Spring 2019</h2>
+<h2 onclick="myFunction1()">Spring 2019</h2>
+<div id="doggleText1" style="display: block;">
 <ul>
 <li><p>Lecturer & Tutor, Software Engineering Studio 1A/1B (41093, 41094)</p>
 </li>
 </ul>
-<h2>Autumn 2019</h2>
+</div>
+<h2 onclick="myFunction2()">Autumn 2019</h2>
+<div id="doggleText2" style="display: block;">
 <ul>
 <li><p>Lecturer & Tutor, Computing Science Studio 1 (41078)</p>
 </li>
 </ul>
-<h2 onclick="myFunction()"><div id="mainText" class="tooltip">Prior to 2019<span class="tooltiptext">Click to hide or show</span></div></h2>
-<div id="doggleText" style="display: block;">
+</div>
+<h2 onclick="myFunction3()">Prior to 2019</h2>
+<div id="doggleText3" style="display: block;">
 <ul>
 <li><p>Teaching Assistant. Machine Learning, Harbin Insitute of Technology, autumn 2012</p>
 </li>
@@ -58,8 +61,24 @@
 </ul>
 </div>
 <script>
-function myFunction() {
-  var x = document.getElementById("doggleText");
+function myFunction1() {
+  var x = document.getElementById("doggleText1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("doggleText2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+  var x = document.getElementById("doggleText3");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
