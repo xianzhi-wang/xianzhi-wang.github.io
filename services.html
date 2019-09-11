@@ -5,7 +5,6 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="readMoreReadLess.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -26,7 +25,8 @@
 <div class="menu-item"><a href="apply">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2 id="Services">Services</h2>
+<h2 onclick="myFunction1()">Services</h2>
+<div id="doggleText1" style="display: block;">
 <ul>
 <li><p>Editorial Board Member, International Journal of Web Engineering and Technology, 2019-present</p>
 </li>
@@ -34,10 +34,6 @@
 </li>
 <li><p>Panelist, Australasian Computer Science Week (ACSW): How to succeed as an early career researcher, 2019</p>
 </li>
-</ul>
-<span id="dots_2"></span>
-<span id="more_2">
-<ul>
 <li><p>Outstanding Reviewer, International Journal of Human-Computer Studies, 2018</p>
 </li>
 <li><p>Publicity Chair, International Symposium on Internet of Ubiquitous and Pervasive Things (IUPT), 2017</p>
@@ -49,9 +45,9 @@
 <li><p>Track Co-chair, IEEE International Conferences on Mobile Services (MS): Special Track on Services for the Ubiquitous Web, 2015 </p>
 </li>
 </ul>
-</span>
-<button onclick="myFunction_2()" id="myBtn_2" class="button button4">Show more</button>
-<h2 id="PC_Member">PC Member</h2>
+</div>
+<h2 onclick="myFunction2()">PC Member</h2>
+<div id="doggleText2" style="display: block;">
 <ul>
 <li><p>IEEE International Conference on Communications (ICC 2020): Communication and Information Systems Security Symposium</p>
 </li>
@@ -61,10 +57,6 @@
 </li>
 <li><p>International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN 2019)</p>
 </li>
-</ul>
-<span id="dots"></span>
-<span id="more">
-<ul>
 <li><p>International Conference on Service-Oriented Computing (ICSOC 2019)</p>
 </li>
 <li><p>International Conference on Advanced Data Mining and Applications (ADMA 2019)</p>
@@ -132,9 +124,9 @@
 <li><p>International Symposium on Internet of Ubiquitous and Pervasive Things (IUPT 2015)</p>
 </li>
 </ul>
-</span>
-<button onclick="myFunction()" id="myBtn" class="button button4">Show more</button>
-<h2 id="Reviewer">Reviewer</h2>
+</div>
+<h2 onclick="myFunction3()">Reviewer</h2>
+<div id="doggleText3" style="display: block;">
 <ul>
 <li><p>ACM Transactions on Internet Technology, 2019</p>
 </li>
@@ -144,10 +136,6 @@
 </li>
 <li><p>Neural Computing and Applications, 2019</p>
 </li>
-</ul>
-<span id="dots_1"></span>
-<span id="more_1">
-<ul>
 <li><p>Computing, 2019, 2018, 2017</p>
 </li>
 <li><p>IEEE Access, 2019, 2018</p>
@@ -259,56 +247,31 @@
 <li><p>Computer Integrated Manufacturing System, 2013</p>
 </li>
 </ul>
-</span>
-<button onclick="myFunction_1()" id="myBtn_1" class="button button4">Show more</button>
+</div>
 <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more"; 
-    moreText.style.display = "none";
+function myFunction1() {
+  var x = document.getElementById("doggleText1")
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less"; 
-    moreText.style.display = "inline";
+    x.style.display = "none";
   }
-  location.hash = "#PC_Member";
 }
-function myFunction_1() {
-  var dots_1 = document.getElementById("dots_1");
-  var moreText_1 = document.getElementById("more_1");
-  var btnText_1 = document.getElementById("myBtn_1");
-
-  if (dots_1.style.display === "none") {
-    dots_1.style.display = "inline";
-    btnText_1.innerHTML = "Show more"; 
-    moreText_1.style.display = "none";
+function myFunction2() {
+  var x = document.getElementById("doggleText2")
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    dots_1.style.display = "none";
-    btnText_1.innerHTML = "Show less"; 
-    moreText_1.style.display = "inline";
+    x.style.display = "none";
   }
-  location.hash = "#Reviewer";
 }
-function myFunction_2() {
-  var dots_2 = document.getElementById("dots_2");
-  var moreText_2 = document.getElementById("more_2");
-  var btnText_2 = document.getElementById("myBtn_2");
-
-  if (dots_2.style.display === "none") {
-    dots_2.style.display = "inline";
-    btnText_2.innerHTML = "Show more"; 
-    moreText_2.style.display = "none";
+function myFunction3() {
+  var x = document.getElementById("doggleText3")
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    dots_2.style.display = "none";
-    btnText_2.innerHTML = "Show less"; 
-    moreText_2.style.display = "inline";
+    x.style.display = "none";
   }
-  location.hash = "#Services";
 }
 </script>
 </td>
