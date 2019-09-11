@@ -5,6 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="tooltip.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -35,7 +36,8 @@
 <li><p>Lecturer & Tutor, Computing Science Studio 1 (41078)</p>
 </li>
 </ul>
-<h2>Prior to 2019</h2>
+<h2 onclick="myFunction()"><div id="mainText" class="tooltip">Prior to 2019<span class="tooltiptext">Click to hide or show</span></div></h2>
+<div id="doggleText" style="display: block;">
 <ul>
 <li><p>Teaching Assistant. Machine Learning, Harbin Insitute of Technology, autumn 2012</p>
 </li>
@@ -51,10 +53,20 @@
 </li>
 <li><p>Teaching Assistant. Set Theory and Graph Theory, Harbin Insitute of Technology, spring 2008</p>
 </li>
-<li><p>Teaching Assistant. Fundamentals of Electronic Technology, Harbin Insitute of Technology, autumn 2007
-<br /></p>
+<li><p>Teaching Assistant. Fundamentals of Electronic Technology, Harbin Insitute of Technology, autumn 2007</p>
 </li>
 </ul>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("doggleText");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </td>
 </tr>
 </table>
