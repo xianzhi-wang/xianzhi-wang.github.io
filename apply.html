@@ -26,7 +26,9 @@
 <div class="menu-item"><a href="apply" class="current">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2>Apply for PhD</h2>
+</div>
+<h2 onclick="myFunction1()">Apply for PhD</h2>
+<div id="doggleText1" style="display: block;">
 <p><tt><b>Eligibility</b>: Applicant must hold or will hold a Master's or Bachelor (honors)'s degree.</tt><br />
 <tt><b>Duration</b>: 3&ndash;3.5 years; <b>Stipend</b>: AU$27,596 per annum (tax free); <b>Tuition fee</b>: Waived; <b>Top-ups</b>: Will be provided to CSC students.</tt></p>
 <ol>
@@ -41,7 +43,9 @@
 <li><p>Submit your application before deadlines: <font color="Red">15 January 2020</font> (International) or <font color="Red">30 April 2020</font> (Domestic).</p>
 </li>
 </ol>
-<h2>Apply for Master by Research</h2>
+</div>
+<h2 onclick="myFunction2()">Apply for Master by Research</h2>
+<div id="doggleText2" style="display: block;">
 <p><tt><b>Eligibility</b>: Applicant must hold or will hold a Bachelor's degree.</tt><br />
 <tt><b>Duration</b>: 1.5&ndash;2 years.</tt></p>
 <ol>
@@ -50,7 +54,9 @@
 <li><p>Then, follow the same procedure (excluding Step 4) and deadlines, and submit the same documents as required for PhD applicants.</p>
 </li>
 </ol>
-<h2>Visiting Professor/Fellow/Scholar/Student</h2>
+</div>
+<h2 onclick="myFunction3()">Visiting Professor/Fellow/Scholar/Student</h2>
+<div id="doggleText3" style="display: block;">
 <p><tt><b>UTS Rankings in Computer Science</b>: World (QS: 51-100, Times: 74, USNews: 39, ARWU: 29); Domestic (QS: 4-7, Times: 2, USNews: 2, ARWU: 1)</tt></p>
 <ol>
 <li><p>Complete <a href="Honorary_Appointment_Form.pdf">Honorary Appointment Form</a> by putting in your personal details (Section A), start/end dates, research proposal (Section D).</p>
@@ -59,10 +65,36 @@
 </li>
 <li><p>Apply for <a href="100042_CSC_UTS_Scholarship_type1.pdf">CSC-UTS Visitor Scholarship</a> or <span class="tooltip">other support<span class="tooltiptext">e.g., KTP Visiting Fellow Program</a></span></span> (if applicable), using the invitation/sponsorship letter from UTS.</p>
 </li>
-<li><p>Apply for a <a href="https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/" target="_blank">Temporary Activity visa (subclass 408)</a> using the invitation/sposnorship letter from UTS (if you need a visa).
-<br /></p>
+<li><p>Apply for a <a href="https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/" target="_blank">Temporary Activity visa (subclass 408)</a> using the invitation/sposnorship letter from UTS (if you need a visa).</p>
 </li>
 </ol>
+</div>
+<script>
+function myFunction1() {
+  var x = document.getElementById("doggleText1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("doggleText2")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+  var x = document.getElementById("doggleText3")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </td>
 </tr>
 </table>
