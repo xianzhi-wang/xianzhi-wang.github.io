@@ -2,9 +2,8 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
 <link rel="stylesheet" href="css/tooltip.css" type="text/css" />
 <title></title>
 </head>
@@ -27,7 +26,7 @@
 </td>
 <td id="layout-content">
 </div>
-<h2 onclick="myFunction1()">Apply for PhD</h2>
+<h2 id="1" onclick="myFunction(this.id)">Apply for PhD</h2>
 <div id="doggleText1" style="display: block;">
 <p><tt><b>Eligibility</b>: Applicant must hold or will hold a Master's or Bachelor (honors)'s degree.</tt><br />
 <tt><b>Duration</b>: 3&ndash;3.5 years; <b>Stipend</b>: AU$27,596 per annum (tax free); <b>Tuition fee</b>: Waived; <b>Top-ups</b>: Will be provided to CSC students.</tt></p>
@@ -44,7 +43,7 @@
 </li>
 </ol>
 </div>
-<h2 onclick="myFunction2()">Apply for Master by Research</h2>
+<h2 id="2" onclick="myFunction(this.id)">Apply for Master by Research</h2>
 <div id="doggleText2" style="display: block;">
 <p><tt><b>Eligibility</b>: Applicant must hold or will hold a Bachelor's degree.</tt><br />
 <tt><b>Duration</b>: 1.5&ndash;2 years.</tt></p>
@@ -55,7 +54,7 @@
 </li>
 </ol>
 </div>
-<h2 onclick="myFunction3()">Visiting Professor/Fellow/Scholar/Student</h2>
+<h2 id="3" onclick="myFunction(this.id)">Visiting Professor/Fellow/Scholar/Student</h2>
 <div id="doggleText3" style="display: block;">
 <p><tt><b>UTS Rankings in Computer Science</b>: World (QS: 51-100, Times: 74, USNews: 39, ARWU: 29); Domestic (QS: 4-7, Times: 2, USNews: 2, ARWU: 1)</tt></p>
 <ol>
@@ -69,25 +68,17 @@
 </li>
 </ol>
 </div>
+<div id="footer">
+<div id="footer-text">
+2019-09-13 13:46:44 AUS Eastern Standard Time
+</div>
+</div>
+</td>
+</tr>
+</table>
 <script>
-function myFunction1() {
-  var x = document.getElementById("doggleText1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction2() {
-  var x = document.getElementById("doggleText2")
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction3() {
-  var x = document.getElementById("doggleText3")
+function myFunction(para) {
+  var x = document.getElementById("doggleText" + para);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -95,8 +86,5 @@ function myFunction3() {
   }
 }
 </script>
-</td>
-</tr>
-</table>
 </body>
 </html>

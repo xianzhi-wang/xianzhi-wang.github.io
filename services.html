@@ -2,9 +2,8 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
 <title></title>
 </head>
 <body>
@@ -25,7 +24,7 @@
 <div class="menu-item"><a href="apply">Join&nbsp;us</a></div>
 </td>
 <td id="layout-content">
-<h2 onclick="myFunction1()">Services</h2>
+<h2 id="1" onclick="myFunction(this.id)">Services</h2>
 <div id="doggleText1" style="display: block;">
 <ul>
 <li><p>Editorial Board, International Journal of Web Engineering and Technology, 2019-present</p>
@@ -46,7 +45,7 @@
 </li>
 </ul>
 </div>
-<h2 onclick="myFunction2()">Program Committee</h2>
+<h2 id="2" onclick="myFunction(this.id)">Program Committee</h2>
 <div id="doggleText2" style="display: block;">
 <ul>
 <li><p>IEEE International Conference on Communications (ICC 2020): Communication and Information Systems Security Symposium</p>
@@ -125,7 +124,7 @@
 </li>
 </ul>
 </div>
-<h2 onclick="myFunction3()">Reviewer</h2>
+<h2 id="3" onclick="myFunction(this.id)">Reviewer</h2>
 <div id="doggleText3" style="display: block;">
 <ul>
 <li><p>ACM Transactions on Internet Technology, 2019</p>
@@ -248,25 +247,17 @@
 </li>
 </ul>
 </div>
+<div id="footer">
+<div id="footer-text">
+2019-09-13 13:46:44 AUS Eastern Standard Time
+</div>
+</div>
+</td>
+</tr>
+</table>
 <script>
-function myFunction1() {
-  var x = document.getElementById("doggleText1")
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction2() {
-  var x = document.getElementById("doggleText2")
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction3() {
-  var x = document.getElementById("doggleText3")
+function myFunction(para) {
+  var x = document.getElementById("doggleText" + para);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -274,8 +265,5 @@ function myFunction3() {
   }
 }
 </script>
-</td>
-</tr>
-</table>
 </body>
 </html>
