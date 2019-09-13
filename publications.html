@@ -228,8 +228,8 @@
 </li>
 </ol>
 </div>
-<h2>Chapters</h2>
-<h3 onclick="myFunction11()"><button class="button button4 button3">All Years</button></h3>
+<h2>Others</h2>
+<h3 onclick="myFunction11()"><button class="button button4 button3">Chapters</button></h3>
 <div id="doggleText11" style="display: block;">
 <ol>
 <li><p>L. Yao, Q. Z. Sheng, Anne H. H. Ngu, X. Li, B. Benatallah, X. Wang. <a href="https://doi.org/10.1016/B978-0-12-809764-9.00013-5">Building entity graphs for the web of things management via usage history</a>, Managing the Web of Things: Linking the Real World to the Web, Morgan Kaufmann, Elsevier, 2016. [<a href="bibtex/yao2017building.bib">bibtex</a>]</p>
@@ -239,6 +239,17 @@
 <li><p>X. Wang. Virtualizing concepts from service models, Essentials of Service Design, Tsinghua University Press, 2013. (Translation)</p>
 </li>
 <li><p>X. Wang, X. Xu. Service engineering applications, Service Engineering and Methodology, Tsinghua University Press, 2011. (in Chinese)</p>
+</li>
+</ol>
+</div>
+<h3 onclick="myFunctionX()"><button class="button button4 button3">Preprints</button></h3>
+<div id="doggleTextX" style="display: block;">
+<ol>
+<li><p>X. Zhang, L. Yao, X. Wang, J. Monaghan, D. Mcalpine, Y. Zhang. <a href="https://arxiv.org/abs/1905.04149">A survey on deep learning based brain computer interface: Recent advances and new frontiers</a>, preprint, 2019. [<a href="bibtex/zhang2019survey.bib">bibtex</a>]</p>
+</li>
+<li><p>X. S. Fang, Q. Z. Sheng, X. Wang, W. E. Zhang, A. H.H. Ngu. <a href="https://arxiv.org/abs/1708.02029">From appearance to essence: Comparing truth discovery methods without using ground truth</a>, preprint, 2017. [<a href="bibtex/fang2017appearance.bib">bibtex</a>]</p>
+</li>
+<li><p>L. Yao, Q. Z. Sheng, B. Benatallah, S. Dustdar, X. Wang, A. Shemshadi, A. H.H. Ngu. <a href="https://arxiv.org/abs/1512.06257">Up in the air: When homes meet the web of things</a>, preprint 2015. [<a href="bibtex/yao2015air.bib">bibtex</a>]</p>
 </li>
 </ol>
 </div>
@@ -325,6 +336,14 @@ function myFunction10() {
 }
 function myFunction11() {
   var x = document.getElementById("doggleText11")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunctionX() {
+  var x = document.getElementById("doggleTextX")
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
