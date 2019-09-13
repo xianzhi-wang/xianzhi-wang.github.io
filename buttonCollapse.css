@@ -12,4 +12,11 @@
   cursor: pointer;
 }
 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button4 {
+  background-color: #e7e7e7; /* Gray */
+  color: black;
+}
+
+.button3 {
+  width: 65px;
+} 
